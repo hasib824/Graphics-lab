@@ -1,17 +1,12 @@
 #include <windows.h>
-
 #include <cmath>
-
 #define ROUND(a) ((int) (a + 0.5))
 
 /* set window handle */
 
 static HWND sHwnd;
-
 static COLORREF redColor=RGB(255,0,0);
-
 static COLORREF blueColor=RGB(0,0,255);
-
 static COLORREF greenColor=RGB(0,255,0);
 
 void SetWindowHandle(HWND hwnd){
@@ -84,25 +79,27 @@ SetWindowHandle(hwnd);
 
 
  // 1st rectangle
-drawLineDDA(10, 20, 250, 20);
-drawLineDDA(10, 150, 250, 150);
+drawLineDDA(10, 20, 150, 20);  //
+drawLineDDA(10, 150, 150, 150);
 drawLineDDA(10, 20, 10, 150);
-drawLineDDA(250, 20, 250, 150);
+drawLineDDA(150, 20, 150, 150);
 
 // 2nd rectangle
 
-drawLineDDA(60, 70, 300, 70);
-drawLineDDA(60, 200, 300, 200);
-drawLineDDA(60, 70, 60, 200);
-drawLineDDA(300, 70, 300, 200);
+drawLineDDA(60, 70, 200, 70);
+drawLineDDA(60, 210, 200, 210);
+drawLineDDA(60, 70, 60, 210);
+drawLineDDA(200, 70, 200, 210);
+
 
 
 // Arrows
 
 drawLineDDA(10, 20, 60, 70);
-drawLineDDA(250, 20, 300, 70);
-drawLineDDA(10, 150, 60, 200);
-drawLineDDA(250, 150, 300, 200);
+drawLineDDA(150, 20, 200, 70);
+drawLineDDA(10, 150, 60, 210);
+drawLineDDA(150, 150, 200, 210);
+
 
 
 
